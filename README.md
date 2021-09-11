@@ -1,6 +1,6 @@
 > **NOTICE**
 
-> I am no longer able to support or maintain this project - if you would like to take over the project, please drop me a line.
+> This version is patched for PHP 8 support. If there are any problems, contact me via issues.
 
 # LightOpenID
 
@@ -10,11 +10,12 @@ Lightweight PHP5 library for easy OpenID authentication.
                  ( *see [the change log][2] for details* )
 * `Released on:` March 04, 2016
 * `Source code:` [Official GitHub Repo :octocat:][3]
-* `Homepage...:` http://code.google.com/p/lightopenid/
-* `Author.....:` [Mewp][4]
+* `Homepage...:` https://github.com/pootis-network/LightOpenID/
+* `Original Author.....:` [Mewp][4]
+* `Maintainer.....:` thexkey
 
-[1]: https://github.com/iignatov/LightOpenID/archive/master.zip
-[2]: https://github.com/iignatov/LightOpenID/blob/master/CHANGELOG.md
+[1]: https://github.com/pootis-network/LightOpenID/archive/master.zip
+[2]: https://github.com/pootis-network/LightOpenID/blob/master/CHANGELOG.md
 [3]: https://github.com/Mewp/lightopenid
 [4]: https://github.com/Mewp
 
@@ -76,7 +77,7 @@ Lightweight PHP5 library for easy OpenID authentication.
   $openid->getAttributes();
   ```
 
-  For more information see [USAGE.md](http://github.com/iignatov/LightOpenID/blob/master/USAGE.md).
+  For more information see [USAGE.md](http://github.com/pootis-network/LightOpenID/blob/master/USAGE.md).
 
 
 ## Requirements
@@ -107,6 +108,6 @@ This library requires PHP >= 5.1.2 with cURL or HTTP/HTTPS stream wrappers enabl
 
 ## License
 
-[LightOpenID](http://github.com/iignatov/LightOpenID)
+[LightOpenID](http://github.com/pootis-network/LightOpenID)
 is an open source software available under the
 [MIT License](http://opensource.org/licenses/mit-license.php).

@@ -187,7 +187,7 @@ class LightOpenID
         return $use_secure_protocol ? 'https://' : 'http://';
     }
 
-    protected function request_curl($url, $method='GET', $params=array(), $update_claimed_id)
+    protected function request_curl($url=null, $method='GET', $params=array(), $update_claimed_id=null)
     {
         $params = http_build_query($params, '', '&');
         $curl = curl_init($url . ($method == 'GET' && $params ? '?' . $params : ''));
@@ -317,7 +317,7 @@ class LightOpenID
         return $headers;
     }
 
-    protected function request_streams($url, $method='GET', $params=array(), $update_claimed_id)
+    protected function request_streams($url=null, $method='GET', $params=array(), $update_claimed_id=null)
     {
         if(!$this->hostExists($url)) {
             throw new ErrorException("Could not connect to $url.", 404);
@@ -918,8 +918,8 @@ class LightOpenID
             # wants to verify. stripslashes() should solve that problem, but we can't
             # use it when magic_quotes is off.
             $value = $this->data['openid_' . str_replace('.','_',$item)];
-            $params['openid.' . $item] = function_exists('get_magic_quotes_gpc') && get_magic_quotes_gpc() ? stripslashes($value) : $value;
-
+            $params['openid.' . $item] = $this->data['openid_' . str_replace('.','_',$item)];
+            
         }
 
         $params['openid.mode'] = 'check_authentication';

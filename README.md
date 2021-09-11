@@ -28,13 +28,13 @@ Lightweight PHP5 library for easy OpenID authentication.
 "repositories": [
   {
     "type": "vcs",
-    "url": "https://github.com/iignatov/LightOpenID"
+    "url": "https://github.com/pootis-network/LightOpenID"
   }
 ],
 
 "require": {	
   "php": ">=5.4.0",
-  "iignatov/lightopenid": "*"
+  "pootis-network/lightopenid": "*"
 }
 ```
 

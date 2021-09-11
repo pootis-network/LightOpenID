@@ -2,7 +2,8 @@
 
 ## v1.3.2 (September 10, 2021)
 `fix` Removed all traces of `get_magic_quotes_gpc()` for PHP 8 Compatibillty
- `fix` Fixed functions for PHP 8 Compatibillity (Fix by https://github.com/Alydus)
+
+`fix` Fixed functions for PHP 8 Compatibillity (Fix by https://github.com/Alydus)
 
 ## v1.3.1 (March 04, 2016)
 
